@@ -14,12 +14,12 @@ router.get("/", (req, res) => {
   res.send(users);
 });
 
-router.post("/", createUser);
+router.post("/", createUser); // create a new user using createUser from the controller
 
-router.get("/:id", getUsers);
+router.get("/:id", getUsers); // get a user by id
 
-router.delete("/:id", deleteUser);
+router.delete("/:id", deleteUser); // delete a user by id
 
-router.patch("/:id", updateUser);
+router.patch("/:id", updateUser); // update a user by id
 
-export default router;
+export default router; // export the router
