@@ -12,14 +12,12 @@ app.use(bodyParser.json());
 
 app.use("/users", usersRoutes); // use the usersRoutes for all routes starting with /users
 
+// test route
 
 app.get("/", (req, res) => {
-    res.send("Hello World");
+  res.send("Hello World");
   console.log("Hello World");
-  
 });
-
-
 
 app.listen(PORT, () => {
   console.log(`Server running on port: http://localhost:${PORT}`);
